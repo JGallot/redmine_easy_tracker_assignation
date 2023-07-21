@@ -14,7 +14,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 require 'redmine'
-require_dependency 'tracker_assign/hook'
+require File.expand_path('../lib/tracker_assign/hook', __FILE__)
 
 Rails.configuration.to_prepare do
 	require_dependency 'tracker_assign/projects_controller_patch' #Apply patch

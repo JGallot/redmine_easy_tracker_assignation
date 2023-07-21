@@ -13,7 +13,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-module TrackerAssignHook
+module TrackerAssign
 	class Hook < Redmine::Hook::ViewListener
 		#Add select list in project settings and set auto-assign in issue form
 		render_on :view_projects_form, :partial => 'projects/trackers_assign'
